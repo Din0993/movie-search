@@ -13,11 +13,10 @@ let movieGenresArr = [];
 let hiddenMenuStatus = 0;
 
 //========================================================================= DOM ELEMENTS ===================================================================================================
-
 const searchInput = document.querySelector(".navigation__input");
 const searchSuggestions = document.querySelector(".navigation__suggestions");
 var myCarousel = document.querySelector("#myCarousel");
-var carousel = new bootstrap.Carousel(myCarousel);
+// var carousel = new bootstrap.Carousel(myCarousel);
 const carouselItem1 = document.querySelector(".carousel-item-1");
 const carouselItem2 = document.querySelector(".carousel-item-2");
 const carouselItem3 = document.querySelector(".carousel-item-3");
