@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/5991df7afe.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie/TV-Show Search App</title>
+  </head>
+  <body>
+    <div class="navigation__hidden-menu">
+      <div class="navigation__hidden-menu__movies">
+        <button class="navigation__hidden-menu__movies__heading-btn">
+          Movies
+        </button>
+        <ul class="navigation__hidden-menu__movies__drop__list">
+          <li class="navigation__hidden-menu__movies__drop__item">
+            <a
+              href="/pages/movies/popular/index.html"
+              class="navigation__hidden-menu__movies__drop__link"
+              >Popular</a
+            >
+          </li>
+          <li class="navigation__hidden-menu__movies__drop__item">
+            <a
+              href="/pages/movies/intheaters/index.html"
+              class="navigation__hidden-menu__movies__drop__link"
+              >In Theaters</a
+            >
+          </li>
+          <li class="navigation__hidden-menu__movies__drop__item">
+            <a
+              href="/pages/movies/upcoming/index.html"
+              class="navigation__hidden-menu__movies__drop__link"
+              >Upcoming Movies</a
+            >
+          </li>
+          <li class="navigation__hidden-menu__movies__drop__item">
+            <a
+              href="/pages/movies/toprated/index.html"
+              class="navigation__hidden-menu__movies__drop__link"
+              >Top Rated Movies</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navigation__hidden-menu__tvshows">
+        <button class="navigation__hidden-menu__tvshows__heading-btn">
+          TV-Shows
+        </button>
+        <ul class="navigation__hidden-menu__tvshows__drop__list">
+          <li class="navigation__hidden-menu__tvshows__drop__item">
+            <a
+              href="/pages/tvshows/popular/index.html"
+              class="navigation__hidden-menu__tvshows__drop__link"
+              >Popular</a
+            >
+          </li>
+          <li class="navigation__hidden-menu__tvshows__drop__item">
+            <a
+              href="/pages/tvshows/ontv/index.html"
+              class="navigation__hidden-menu__tvshows__drop__link"
+              >On TV Today</a
+            >
+          </li>
+          <li class="navigation__hidden-menu__tvshows__drop__item">
+            <a
+              href="/pages/tvshows/running/index.html"
+              class="navigation__hidden-menu__tvshows__drop__link"
+              >Currently Running</a
+            >
+          </li>
+          <li class="navigation__hidden-menu__tvshows__drop__item">
+            <a
+              href="/pages/tvshows/toprated/index.html"
+              class="navigation__hidden-menu__tvshows__drop__link"
+              >Top Rated TV-Shows</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navigation__hidden-menu__people">
+        <button class="navigation__hidden-menu__people__heading-btn">
+          People
+        </button>
+        <ul class="navigation__hidden-menu__people__drop__list">
+          <li class="navigation__hidden-menu__people__drop__item">
+            <a
+              href="/pages/people/popular/index.html"
+              class="navigation__hidden-menu__people__drop__link"
+              >Most Popular</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav class="navigation">
+      <div class="navigation__container">
+        <a href="#" class="navigation__logo"
+          ><i class="fas fa-film"></i>
+          <h1 class="navigation__heading">MovieSearch</h1></a
+        >
+
+        <div class="navigation__dropdowns">
+          <div class="navigation__movies">
+            <h2 class="navigation__movies__heading">Movies</h2>
+            <div class="navigation__movies__drop">
+              <ul class="navigation__movies__drop__list">
+                <li class="navigation__movies__drop__item">
+                  <a
+                    href="/pages/movies/popular/index.html"
+                    class="navigation__movies__drop__link"
+                    >Popular</a
+                  >
+                </li>
+                <li class="navigation__movies__drop__item">
+                  <a
+                    href="/pages/movies/intheaters/index.html"
+                    class="navigation__movies__drop__link"
+                    >In Theaters</a
+                  >
+                </li>
+                <li class="navigation__movies__drop__item">
+                  <a
+                    href="/pages/movies/upcoming/index.html"
+                    class="navigation__movies__drop__link"
+                    >Upcoming Movies</a
+                  >
+                </li>
+                <li class="navigation__movies__drop__item">
+                  <a
+                    href="/pages/movies/toprated/index.html"
+                    class="navigation__movies__drop__link"
+                    >Top Rated Movies</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="navigation__tv-shows">
+            <h2 class="navigation__tv-shows__heading">TV-Shows</h2>
+            <div class="navigation__tv-shows__drop">
+              <ul class="navigation__tv-shows__drop__list">
+                <li class="navigation__tv-shows__drop__item">
+                  <a
+                    href="/pages/tvshows/popular/index.html"
+                    class="navigation__tv-shows__drop__link"
+                    >Popular</a
+                  >
+                </li>
+                <li class="navigation__tv-shows__drop__item">
+                  <a
+                    href="/pages/tvshows/ontv/index.html"
+                    class="navigation__tv-shows__drop__link"
+                    >On TV Today</a
+                  >
+                </li>
+                <li class="navigation__tv-shows__drop__item">
+                  <a
+                    href="/pages/tvshows/running/index.html"
+                    class="navigation__tv-shows__drop__link"
+                    >Currently Running</a
+                  >
+                </li>
+                <li class="navigation__tv-shows__drop__item">
+                  <a
+                    href="/pages/tvshows/toprated/index.html"
+                    class="navigation__tv-shows__drop__link"
+                    >Top Rated TV-Shows</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="navigation__people">
+            <h2 class="navigation__people__heading">People</h2>
+            <div class="navigation__people__drop">
+              <ul class="navigation__people__drop__list">
+                <li class="navigation__people__drop__item">
+                  <a
+                    href="/pages/people/popular/index.html"
+                    class="navigation__people__drop__link"
+                    >Most Popular</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <button class="navigation__hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="navigation__searchbox">
+          <input
+            type="text"
+            class="navigation__input"
+            placeholder="Search for Movies, TV-Shows or Actors / Actresses..."
+          />
+          <div class="navigation__suggestions"></div>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="in-theaters-and-popular__heading">Most popular today</h1>
+    <section class="in-theaters-and-popular">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active carousel-item-1">
+            <img
+              src="http://img.youtube.com/vi/A47y6VJNols/0.jpg"
+              class="d-block w-100 carousel-movie-img carousel-movie-img-1"
+            />
+            <img src="/images/yt-play.png" class="yt-play-img" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="carousel-movie-name carousel-movie-name-1"></h5>
+              <p class="carousel-video-type-1"></p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item-2">
+            <img
+              src="https://media.istockphoto.com/photos/ships-in-the-harbor-picture-id847708760?k=20&m=847708760&s=612x612&w=0&h=7x5j2X5Btj_gdz10iLrN-oj0psDYNkkBGhlOe6eauDg="
+              class="d-block w-100 carousel-movie-img carousel-movie-img-2"
+            />
+            <img src="/images/yt-play.png" class="yt-play-img" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="carousel-movie-name carousel-movie-name-2"></h5>
+              <p class="carousel-video-type-2"></p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item-3">
+            <img
+              src="https://media.istockphoto.com/photos/belgrade-picture-id491523503?b=1&k=20&m=491523503&s=170667a&w=0&h=sEmDMWE48-0dQCnGIA83-xb_gZ-5pwi0TWQoEyjPS0I="
+              class="d-block w-100 carousel-movie-img carousel-movie-img-3"
+            />
+            <img src="/images/yt-play.png" class="yt-play-img" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="carousel-movie-name carousel-movie-name-3"></h5>
+              <p class="carousel-video-type-3"></p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item-4">
+            <img
+              src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWF8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
+              class="d-block w-100 carousel-movie-img carousel-movie-img-4"
+            />
+            <img src="/images/yt-play.png" class="yt-play-img" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="carousel-movie-name carousel-movie-name-4"></h5>
+              <p class="carousel-video-type-4"></p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item-5">
+            <img
+              src="https://media.istockphoto.com/photos/colored-powder-explosion-on-black-background-picture-id1057506940?k=20&m=1057506940&s=612x612&w=0&h=3j5EA6YFVg3q-laNqTGtLxfCKVR3_o6gcVZZseNaWGk="
+              class="d-block w-100 carousel-movie-img carousel-movie-img-5"
+            />
+            <img src="/images/yt-play.png" class="yt-play-img" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="carousel-movie-name carousel-movie-name-5"></h5>
+              <p class="carousel-video-type-5"></p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="popular-today">
+        <div class="popular-today__movie">
+          <p class="popular-today__movie__name">MOVIE NAME</p>
+        </div>
+
+        <div class="popular-today__person">
+          <p class="popular-today__person__name">PERSON NAME</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular-tv-shows">
+      <h1 class="popular-tv-shows__heading">Most popular TV-Shows</h1>
+      <div class="popular-tv-shows__container">
+        <div class="popular-tv-shows__card popular-tv-shows__card-1">
+          <img
+            src=""
+            class="popular-tv-shows__card__img popular-tv-shows__card__img-1"
+          />
+          <h2
+            class="popular-tv-shows__card__name popular-tv-shows__card__name-1"
+          ></h2>
+          <div class="popular-tv-shows__card__overview">
+            <h2 class="popular-tv-shows__card__overview__heading"></h2>
+            <div class="popular-tv-shows__card__overview__info-container">
+              <p
+                class="
+                  popular-tv-shows__card__overview__genres
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  popular-tv-shows__card__overview__first-air-date
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  popular-tv-shows__card__overview__last-air-date
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  popular-tv-shows__card__overview__runtime
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  popular-tv-shows__card__overview__status
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+            </div>
+            <a
+              href="/pages/details/tvshow/index.html"
+              class="popular-tv-shows__card__overview__btn"
+            >
+              Details
+            </a>
+          </div>
+        </div>
+        <div class="popular-tv-shows__card popular-tv-shows__card-2">
+          <img
+            src=""
+            class="popular-tv-shows__card__img popular-tv-shows__card__img-2"
+          />
+          <h2
+            class="popular-tv-shows__card__name popular-tv-shows__card__name-2"
+          ></h2>
+          <div class="popular-tv-shows__card__overview">
+            <h2 class="popular-tv-shows__card__overview__heading"></h2>
+            <div class="popular-tv-shows__card__overview__info-container">
+              <p
+                class="
+                  popular-tv-shows__card__overview__genres
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  popular-tv-shows__card__overview__first-air-date
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  popular-tv-shows__card__overview__last-air-date
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  popular-tv-shows__card__overview__runtime
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  popular-tv-shows__card__overview__status
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+            </div>
+            <a
+              href="/pages/details/tvshow/index.html"
+              class="popular-tv-shows__card__overview__btn"
+            >
+              Details
+            </a>
+          </div>
+        </div>
+        <div class="popular-tv-shows__card popular-tv-shows__card-3">
+          <img
+            src=""
+            class="popular-tv-shows__card__img popular-tv-shows__card__img-3"
+          />
+          <h2
+            class="popular-tv-shows__card__name popular-tv-shows__card__name-3"
+          ></h2>
+          <div class="popular-tv-shows__card__overview">
+            <h2 class="popular-tv-shows__card__overview__heading"></h2>
+            <div class="popular-tv-shows__card__overview__info-container">
+              <p
+                class="
+                  popular-tv-shows__card__overview__genres
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  popular-tv-shows__card__overview__first-air-date
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  popular-tv-shows__card__overview__last-air-date
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  popular-tv-shows__card__overview__runtime
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  popular-tv-shows__card__overview__status
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+            </div>
+            <a
+              href="/pages/details/tvshow/index.html"
+              class="popular-tv-shows__card__overview__btn"
+            >
+              Details
+            </a>
+          </div>
+        </div>
+        <div class="popular-tv-shows__card popular-tv-shows__card-4">
+          <img
+            src=""
+            class="popular-tv-shows__card__img popular-tv-shows__card__img-4"
+          />
+          <h2
+            class="popular-tv-shows__card__name popular-tv-shows__card__name-4"
+          ></h2>
+          <div class="popular-tv-shows__card__overview">
+            <h2 class="popular-tv-shows__card__overview__heading"></h2>
+            <div class="popular-tv-shows__card__overview__info-container">
+              <p
+                class="
+                  popular-tv-shows__card__overview__genres
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  popular-tv-shows__card__overview__first-air-date
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  popular-tv-shows__card__overview__last-air-date
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  popular-tv-shows__card__overview__runtime
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  popular-tv-shows__card__overview__status
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+            </div>
+            <a
+              href="/pages/details/tvshow/index.html"
+              class="popular-tv-shows__card__overview__btn"
+            >
+              Details
+            </a>
+          </div>
+        </div>
+        <div class="popular-tv-shows__card popular-tv-shows__card-5">
+          <img
+            src=""
+            class="popular-tv-shows__card__img popular-tv-shows__card__img-5"
+          />
+          <h2
+            class="popular-tv-shows__card__name popular-tv-shows__card__name-5"
+          ></h2>
+          <div class="popular-tv-shows__card__overview">
+            <h2 class="popular-tv-shows__card__overview__heading"></h2>
+            <div class="popular-tv-shows__card__overview__info-container">
+              <p
+                class="
+                  popular-tv-shows__card__overview__genres
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  popular-tv-shows__card__overview__first-air-date
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  popular-tv-shows__card__overview__last-air-date
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  popular-tv-shows__card__overview__runtime
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  popular-tv-shows__card__overview__status
+                  popular-tv-shows__card__overview__text
+                "
+              ></p>
+            </div>
+            <a
+              href="/pages/details/tvshow/index.html"
+              class="popular-tv-shows__card__overview__btn"
+            >
+              Details
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="born-today">
+      <h1 class="born-today__heading">Born Today</h1>
+      <div class="born-today__container">
+        <div class="born-today__card">
+          <img
+            src="https://image.tmdb.org/t/p/w185/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg"
+            class="born-today__card__img"
+          />
+          <p class="born-today__card__name">Full Name</p>
+          <p class="born-today__card__age">35</p>
+        </div>
+        <div class="born-today__card">
+          <img
+            src="https://image.tmdb.org/t/p/w154/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg"
+            class="born-today__card__img"
+          />
+          <p class="born-today__card__name">Full Name</p>
+          <p class="born-today__card__age">35</p>
+        </div>
+        <div class="born-today__card">
+          <img
+            src="https://image.tmdb.org/t/p/w154/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg"
+            class="born-today__card__img"
+          />
+          <p class="born-today__card__name">Full Name</p>
+          <p class="born-today__card__age">35</p>
+        </div>
+        <div class="born-today__card">
+          <img
+            src="https://image.tmdb.org/t/p/w154/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg"
+            class="born-today__card__img"
+          />
+          <p class="born-today__card__name">Full Name</p>
+          <p class="born-today__card__age">35</p>
+        </div>
+        <div class="born-today__card">
+          <img
+            src="https://image.tmdb.org/t/p/w154/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg"
+            class="born-today__card__img"
+          />
+          <p class="born-today__card__name">Full Name</p>
+          <p class="born-today__card__age">35</p>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="top-rated-movies-by-genres">
+      <div class="top-rated-movies-by-genres__head">
+        <h1 class="top-rated-movies-by-genres__heading">
+          Top Rated Movies by Genres:
+        </h1>
+      </div>
+      <button class="top-rated-movies-by-genres__btn">Select Genre</button>
+      <div class="top-rated-movies-by-genres__dropdown">
+        <div class="top-rated-movies-by-genres__drop-content">
+          <div class="top-rated-movies-by-genres__genre-container1">
+            <p class="top-rated-movies-by-genres__genre" data-id="">Genre 1</p>
+            <p class="top-rated-movies-by-genres__genre" data-id="">Genre 2</p>
+            <p class="top-rated-movies-by-genres__genre" data-id="">Genre 3</p>
+            <p class="top-rated-movies-by-genres__genre" data-id="">Genre 4</p>
+          </div>
+          <div class="top-rated-movies-by-genres__genre-container2">
+            <p class="top-rated-movies-by-genres__genre" data-id="">Genre 1</p>
+            <p class="top-rated-movies-by-genres__genre" data-id="">Genre 2</p>
+            <p class="top-rated-movies-by-genres__genre" data-id="">Genre 3</p>
+            <p class="top-rated-movies-by-genres__genre" data-id="">Genre 4</p>
+          </div>
+          <div class="top-rated-movies-by-genres__genre-container3">
+            <p class="top-rated-movies-by-genres__genre" data-id="">Genre 1</p>
+            <p class="top-rated-movies-by-genres__genre" data-id="">Genre 2</p>
+            <p class="top-rated-movies-by-genres__genre" data-id="">Genre 3</p>
+            <p class="top-rated-movies-by-genres__genre" data-id="">Genre 4</p>
+          </div>
+          <div class="top-rated-movies-by-genres__genre-container4">
+            <p class="top-rated-movies-by-genres__genre" data-id="">Genre 1</p>
+            <p class="top-rated-movies-by-genres__genre" data-id="">Genre 2</p>
+            <p class="top-rated-movies-by-genres__genre" data-id="">Genre 3</p>
+            <p class="top-rated-movies-by-genres__genre" data-id="">Genre 4</p>
+          </div>
+          <div class="top-rated-movies-by-genres__genre-container5">
+            <p class="top-rated-movies-by-genres__genre" data-id="">Genre 1</p>
+            <p class="top-rated-movies-by-genres__genre" data-id="">Genre 2</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="top-rated-movies-by-genres__movie-container">
+        <div
+          class="
+            top-rated-movies-by-genres__movie-container__card
+            top-rated-movies-by-genres__movie-container__card-5
+          "
+        >
+          <img
+            src=""
+            class="
+              top-rated-movies-by-genres__movie-container__card__img
+              top-rated-movies-by-genres__movie-container__card__img-5
+            "
+          />
+          <h2
+            class="
+              top-rated-movies-by-genres__movie-container__card__name
+              top-rated-movies-by-genres__movie-container__card__name-5
+            "
+          ></h2>
+          <div
+            class="top-rated-movies-by-genres__movie-container__card__overview"
+          >
+            <h2
+              class="
+                top-rated-movies-by-genres__movie-container__card__overview__heading
+              "
+            ></h2>
+            <div
+              class="
+                top-rated-movies-by-genres__movie-container__card__overview__info-container
+              "
+            >
+              <p
+                class="
+                  top-rated-movies-by-genres__movie-container__card__overview__genres
+                  top-rated-movies-by-genres__movie-container__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  top-rated-movies-by-genres__movie-container__card__overview__first-air-date
+                  top-rated-movies-by-genres__movie-container__card__overview__text
+                "
+              ></p>
+            </div>
+            <a
+              href="/pages/details/movie/index.html"
+              class="
+                top-rated-movies-by-genres__movie-container__card__overview__btn
+              "
+            >
+              Details
+            </a>
+          </div>
+        </div>
+        <div
+          class="
+            top-rated-movies-by-genres__movie-container__card
+            top-rated-movies-by-genres__movie-container__card-5
+          "
+        >
+          <img
+            src=""
+            class="
+              top-rated-movies-by-genres__movie-container__card__img
+              top-rated-movies-by-genres__movie-container__card__img-5
+            "
+          />
+          <h2
+            class="
+              top-rated-movies-by-genres__movie-container__card__name
+              top-rated-movies-by-genres__movie-container__card__name-5
+            "
+          ></h2>
+          <div
+            class="top-rated-movies-by-genres__movie-container__card__overview"
+          >
+            <h2
+              class="
+                top-rated-movies-by-genres__movie-container__card__overview__heading
+              "
+            ></h2>
+            <div
+              class="
+                top-rated-movies-by-genres__movie-container__card__overview__info-container
+              "
+            >
+              <p
+                class="
+                  top-rated-movies-by-genres__movie-container__card__overview__genres
+                  top-rated-movies-by-genres__movie-container__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  top-rated-movies-by-genres__movie-container__card__overview__first-air-date
+                  top-rated-movies-by-genres__movie-container__card__overview__text
+                "
+              ></p>
+            </div>
+            <a
+              href="/pages/details/movie/index.html"
+              class="
+                top-rated-movies-by-genres__movie-container__card__overview__btn
+              "
+            >
+              Details
+            </a>
+          </div>
+        </div>
+        <div
+          class="
+            top-rated-movies-by-genres__movie-container__card
+            top-rated-movies-by-genres__movie-container__card-5
+          "
+        >
+          <img
+            src=""
+            class="
+              top-rated-movies-by-genres__movie-container__card__img
+              top-rated-movies-by-genres__movie-container__card__img-5
+            "
+          />
+          <h2
+            class="
+              top-rated-movies-by-genres__movie-container__card__name
+              top-rated-movies-by-genres__movie-container__card__name-5
+            "
+          ></h2>
+          <div
+            class="top-rated-movies-by-genres__movie-container__card__overview"
+          >
+            <h2
+              class="
+                top-rated-movies-by-genres__movie-container__card__overview__heading
+              "
+            ></h2>
+            <div
+              class="
+                top-rated-movies-by-genres__movie-container__card__overview__info-container
+              "
+            >
+              <p
+                class="
+                  top-rated-movies-by-genres__movie-container__card__overview__genres
+                  top-rated-movies-by-genres__movie-container__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  top-rated-movies-by-genres__movie-container__card__overview__first-air-date
+                  top-rated-movies-by-genres__movie-container__card__overview__text
+                "
+              ></p>
+            </div>
+            <a
+              href="/pages/details/movie/index.html"
+              class="
+                top-rated-movies-by-genres__movie-container__card__overview__btn
+              "
+            >
+              Details
+            </a>
+          </div>
+        </div>
+        <div
+          class="
+            top-rated-movies-by-genres__movie-container__card
+            top-rated-movies-by-genres__movie-container__card-5
+          "
+        >
+          <img
+            src=""
+            class="
+              top-rated-movies-by-genres__movie-container__card__img
+              top-rated-movies-by-genres__movie-container__card__img-5
+            "
+          />
+          <h2
+            class="
+              top-rated-movies-by-genres__movie-container__card__name
+              top-rated-movies-by-genres__movie-container__card__name-5
+            "
+          ></h2>
+          <div
+            class="top-rated-movies-by-genres__movie-container__card__overview"
+          >
+            <h2
+              class="
+                top-rated-movies-by-genres__movie-container__card__overview__heading
+              "
+            ></h2>
+            <div
+              class="
+                top-rated-movies-by-genres__movie-container__card__overview__info-container
+              "
+            >
+              <p
+                class="
+                  top-rated-movies-by-genres__movie-container__card__overview__genres
+                  top-rated-movies-by-genres__movie-container__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  top-rated-movies-by-genres__movie-container__card__overview__first-air-date
+                  top-rated-movies-by-genres__movie-container__card__overview__text
+                "
+              ></p>
+            </div>
+            <a
+              href="/pages/details/movie/index.html"
+              class="
+                top-rated-movies-by-genres__movie-container__card__overview__btn
+              "
+            >
+              Details
+            </a>
+          </div>
+        </div>
+        <div
+          class="
+            top-rated-movies-by-genres__movie-container__card
+            top-rated-movies-by-genres__movie-container__card-5
+          "
+        >
+          <img
+            src=""
+            class="
+              top-rated-movies-by-genres__movie-container__card__img
+              top-rated-movies-by-genres__movie-container__card__img-5
+            "
+          />
+          <h2
+            class="
+              top-rated-movies-by-genres__movie-container__card__name
+              top-rated-movies-by-genres__movie-container__card__name-5
+            "
+          ></h2>
+          <div
+            class="top-rated-movies-by-genres__movie-container__card__overview"
+          >
+            <h2
+              class="
+                top-rated-movies-by-genres__movie-container__card__overview__heading
+              "
+            ></h2>
+            <div
+              class="
+                top-rated-movies-by-genres__movie-container__card__overview__info-container
+              "
+            >
+              <p
+                class="
+                  top-rated-movies-by-genres__movie-container__card__overview__genres
+                  top-rated-movies-by-genres__movie-container__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  top-rated-movies-by-genres__movie-container__card__overview__first-air-date
+                  top-rated-movies-by-genres__movie-container__card__overview__text
+                "
+              ></p>
+            </div>
+            <a
+              href="/pages/details/movie/index.html"
+              class="
+                top-rated-movies-by-genres__movie-container__card__overview__btn
+              "
+            >
+              Details
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-rated-tv-shows-by-genre">
+      <div class="top-rated-tv-shows-by-genre__head">
+        <h1 class="top-rated-tv-shows-by-genre__heading">
+          Top Rated TV-Shows by Genres:
+        </h1>
+      </div>
+      <button class="top-rated-tv-shows-by-genre__btn">Select Genre</button>
+      <div class="top-rated-tv-shows-by-genre__dropdown">
+        <div class="top-rated-tv-shows-by-genre__drop-content">
+          <div class="top-rated-tv-shows-by-genre__genre-container1">
+            <p class="top-rated-tv-shows-by-genre__genre" data-id="">Genre 1</p>
+            <p class="top-rated-tv-shows-by-genre__genre" data-id="">Genre 2</p>
+            <p class="top-rated-tv-shows-by-genre__genre" data-id="">Genre 3</p>
+            <p class="top-rated-tv-shows-by-genre__genre" data-id="">Genre 4</p>
+          </div>
+          <div class="top-rated-tv-shows-by-genre__genre-container2">
+            <p class="top-rated-tv-shows-by-genre__genre" data-id="">Genre 1</p>
+            <p class="top-rated-tv-shows-by-genre__genre" data-id="">Genre 2</p>
+            <p class="top-rated-tv-shows-by-genre__genre" data-id="">Genre 3</p>
+            <p class="top-rated-tv-shows-by-genre__genre" data-id="">Genre 4</p>
+          </div>
+          <div class="top-rated-tv-shows-by-genre__genre-container3">
+            <p class="top-rated-tv-shows-by-genre__genre" data-id="">Genre 1</p>
+            <p class="top-rated-tv-shows-by-genre__genre" data-id="">Genre 2</p>
+            <p class="top-rated-tv-shows-by-genre__genre" data-id="">Genre 3</p>
+            <p class="top-rated-tv-shows-by-genre__genre" data-id="">Genre 4</p>
+          </div>
+          <div class="top-rated-tv-shows-by-genre__genre-container4">
+            <p class="top-rated-tv-shows-by-genre__genre" data-id="">Genre 1</p>
+            <p class="top-rated-tv-shows-by-genre__genre" data-id="">Genre 2</p>
+            <p class="top-rated-tv-shows-by-genre__genre" data-id="">Genre 3</p>
+            <p class="top-rated-tv-shows-by-genre__genre" data-id="">Genre 4</p>
+          </div>
+          <div class="top-rated-tv-shows-by-genre__genre-container5">
+            <p class="top-rated-tv-shows-by-genre__genre" data-id="">Genre 1</p>
+            <p class="top-rated-tv-shows-by-genre__genre" data-id="">Genre 2</p>
+            <p class="top-rated-tv-shows-by-genre__genre" data-id="">Genre 3</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="top-rated-tv-shows-by-genre__movie-container">
+        <div
+          class="
+            top-rated-tv-shows-by-genre__movie-container__card
+            top-rated-tv-shows-by-genre__movie-container__card-5
+          "
+        >
+          <img
+            src=""
+            class="
+              top-rated-tv-shows-by-genre__movie-container__card__img
+              top-rated-tv-shows-by-genre__movie-container__card__img-5
+            "
+          />
+          <h2
+            class="
+              top-rated-tv-shows-by-genre__movie-container__card__name
+              top-rated-tv-shows-by-genre__movie-container__card__name-5
+            "
+          ></h2>
+          <div
+            class="top-rated-tv-shows-by-genre__movie-container__card__overview"
+          >
+            <h2
+              class="
+                top-rated-tv-shows-by-genre__movie-container__card__overview__heading
+              "
+            ></h2>
+            <div
+              class="
+                top-rated-tv-shows-by-genre__movie-container__card__overview__info-container
+              "
+            >
+              <p
+                class="
+                  top-rated-tv-shows-by-genre__movie-container__card__overview__genres
+                  top-rated-tv-shows-by-genre__movie-container__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  top-rated-tv-shows-by-genre__movie-container__card__overview__first-air-date
+                  top-rated-tv-shows-by-genre__movie-container__card__overview__text
+                "
+              ></p>
+            </div>
+            <a
+              href="/pages/details/tvshow/index.html"
+              class="
+                top-rated-tv-shows-by-genre__movie-container__card__overview__btn
+              "
+            >
+              Details
+            </a>
+          </div>
+        </div>
+        <div
+          class="
+            top-rated-tv-shows-by-genre__movie-container__card
+            top-rated-tv-shows-by-genre__movie-container__card-5
+          "
+        >
+          <img
+            src=""
+            class="
+              top-rated-tv-shows-by-genre__movie-container__card__img
+              top-rated-tv-shows-by-genre__movie-container__card__img-5
+            "
+          />
+          <h2
+            class="
+              top-rated-tv-shows-by-genre__movie-container__card__name
+              top-rated-tv-shows-by-genre__movie-container__card__name-5
+            "
+          ></h2>
+          <div
+            class="top-rated-tv-shows-by-genre__movie-container__card__overview"
+          >
+            <h2
+              class="
+                top-rated-tv-shows-by-genre__movie-container__card__overview__heading
+              "
+            ></h2>
+            <div
+              class="
+                top-rated-tv-shows-by-genre__movie-container__card__overview__info-container
+              "
+            >
+              <p
+                class="
+                  top-rated-tv-shows-by-genre__movie-container__card__overview__genres
+                  top-rated-tv-shows-by-genre__movie-container__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  top-rated-tv-shows-by-genre__movie-container__card__overview__first-air-date
+                  top-rated-tv-shows-by-genre__movie-container__card__overview__text
+                "
+              ></p>
+            </div>
+            <a
+              href="/pages/details/tvshow/index.html"
+              class="
+                top-rated-tv-shows-by-genre__movie-container__card__overview__btn
+              "
+            >
+              Details
+            </a>
+          </div>
+        </div>
+        <div
+          class="
+            top-rated-tv-shows-by-genre__movie-container__card
+            top-rated-tv-shows-by-genre__movie-container__card-5
+          "
+        >
+          <img
+            src=""
+            class="
+              top-rated-tv-shows-by-genre__movie-container__card__img
+              top-rated-tv-shows-by-genre__movie-container__card__img-5
+            "
+          />
+          <h2
+            class="
+              top-rated-tv-shows-by-genre__movie-container__card__name
+              top-rated-tv-shows-by-genre__movie-container__card__name-5
+            "
+          ></h2>
+          <div
+            class="top-rated-tv-shows-by-genre__movie-container__card__overview"
+          >
+            <h2
+              class="
+                top-rated-tv-shows-by-genre__movie-container__card__overview__heading
+              "
+            ></h2>
+            <div
+              class="
+                top-rated-tv-shows-by-genre__movie-container__card__overview__info-container
+              "
+            >
+              <p
+                class="
+                  top-rated-tv-shows-by-genre__movie-container__card__overview__genres
+                  top-rated-tv-shows-by-genre__movie-container__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  top-rated-tv-shows-by-genre__movie-container__card__overview__first-air-date
+                  top-rated-tv-shows-by-genre__movie-container__card__overview__text
+                "
+              ></p>
+            </div>
+            <a
+              href="/pages/details/tvshow/index.html"
+              class="
+                top-rated-tv-shows-by-genre__movie-container__card__overview__btn
+              "
+            >
+              Details
+            </a>
+          </div>
+        </div>
+        <div
+          class="
+            top-rated-tv-shows-by-genre__movie-container__card
+            top-rated-tv-shows-by-genre__movie-container__card-5
+          "
+        >
+          <img
+            src=""
+            class="
+              top-rated-tv-shows-by-genre__movie-container__card__img
+              top-rated-tv-shows-by-genre__movie-container__card__img-5
+            "
+          />
+          <h2
+            class="
+              top-rated-tv-shows-by-genre__movie-container__card__name
+              top-rated-tv-shows-by-genre__movie-container__card__name-5
+            "
+          ></h2>
+          <div
+            class="top-rated-tv-shows-by-genre__movie-container__card__overview"
+          >
+            <h2
+              class="
+                top-rated-tv-shows-by-genre__movie-container__card__overview__heading
+              "
+            ></h2>
+            <div
+              class="
+                top-rated-tv-shows-by-genre__movie-container__card__overview__info-container
+              "
+            >
+              <p
+                class="
+                  top-rated-tv-shows-by-genre__movie-container__card__overview__genres
+                  top-rated-tv-shows-by-genre__movie-container__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  top-rated-tv-shows-by-genre__movie-container__card__overview__first-air-date
+                  top-rated-tv-shows-by-genre__movie-container__card__overview__text
+                "
+              ></p>
+            </div>
+            <a
+              href="/pages/details/tvshow/index.html"
+              class="
+                top-rated-tv-shows-by-genre__movie-container__card__overview__btn
+              "
+            >
+              Details
+            </a>
+          </div>
+        </div>
+        <div
+          class="
+            top-rated-tv-shows-by-genre__movie-container__card
+            top-rated-tv-shows-by-genre__movie-container__card-5
+          "
+        >
+          <img
+            src=""
+            class="
+              top-rated-tv-shows-by-genre__movie-container__card__img
+              top-rated-tv-shows-by-genre__movie-container__card__img-5
+            "
+          />
+          <h2
+            class="
+              top-rated-tv-shows-by-genre__movie-container__card__name
+              top-rated-tv-shows-by-genre__movie-container__card__name-5
+            "
+          ></h2>
+          <div
+            class="top-rated-tv-shows-by-genre__movie-container__card__overview"
+          >
+            <h2
+              class="
+                top-rated-tv-shows-by-genre__movie-container__card__overview__heading
+              "
+            ></h2>
+            <div
+              class="
+                top-rated-tv-shows-by-genre__movie-container__card__overview__info-container
+              "
+            >
+              <p
+                class="
+                  top-rated-tv-shows-by-genre__movie-container__card__overview__genres
+                  top-rated-tv-shows-by-genre__movie-container__card__overview__text
+                "
+              ></p>
+              <p
+                class="
+                  top-rated-tv-shows-by-genre__movie-container__card__overview__first-air-date
+                  top-rated-tv-shows-by-genre__movie-container__card__overview__text
+                "
+              ></p>
+            </div>
+            <a
+              href="/pages/details/tvshow/index.html"
+              class="
+                top-rated-tv-shows-by-genre__movie-container__card__overview__btn
+              "
+            >
+              Details
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__text">Designed and Made by Dino Sijaric.</p>
+      <p class="footer__attr">
+        All data used on site by
+        <span
+          ><a href="https://www.themoviedb.org"
+            ><img
+              src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_1-5bdc75aaebeb75dc7ae79426ddd9be3b2be1e342510f8202baf6bffa71d7f5c4.svg"
+              class="tmdb-logo" /></a
+        ></span>
+      </p>
+    </footer>
+
+    <div class="modal-yt-video">
+      <div class="modal-yt-video__container">
+        <div class="modal-yt-video__name-and-exit">
+          <h1 class="modal-yt-video__heading"></h1>
+          <i class="fas fa-times close-modal"></i>
+        </div>
+        <iframe
+          id="ytplayer-modal"
+          type="text/html"
+          width="700"
+          height="500"
+          src=""
+          frameborder="0"
+          allow="fullscreen"
+        ></iframe>
+      </div>
+    </div>
+
+    <script src="/js/asyncfunctions.js"></script>
+    <script src="/js/app.js" type="module"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,223 @@
+.movie-details {
+  width: 100%;
+  margin: 2rem 0;
+  position: relative;
+  &__container {
+    width: 120rem;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+  }
+  &__poster {
+    height: 57rem;
+    width: 36rem;
+    border-radius: 8px;
+  }
+  &__info {
+    font-size: 1.6rem;
+    flex: 1;
+    &__name {
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+    }
+    &__main-crew {
+      display: flex;
+      gap: 5rem;
+      &__link {
+        text-decoration: none;
+        color: $color-white;
+        pointer-events: none;
+        transition: all 0.4s;
+        // &:hover {
+        //   color: $color-red;
+        // }
+      }
+    }
+    &__play-trailer-btn {
+      margin-top: 2rem;
+      border: none;
+      outline: none;
+      width: 15rem;
+      padding: 0.5rem 1rem;
+      background-color: transparent;
+      color: $color-white;
+      font-size: 1.6rem;
+      border: 1px solid $color-white;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        color: $color-red;
+        border: 1px solid $color-red;
+      }
+      &:active {
+        color: $color-red;
+        border: 1px solid $color-red;
+      }
+    }
+    &__tagline {
+      font-style: italic;
+    }
+    &__director,
+    &__story,
+    &__screenplay,
+    &__characters {
+      line-height: 1.5;
+      display: block;
+    }
+  }
+}
+
+.movie-detailed-info {
+  width: 120rem;
+  position: relative;
+  margin: 3rem auto;
+  &__container {
+    margin-top: 2rem;
+    display: flex;
+    font-size: 1.6rem;
+    &__left {
+      flex: 0 0 50%;
+    }
+    &__right {
+      flex: 1;
+    }
+  }
+  &__links {
+    &__homepage {
+      color: $color-white;
+      text-decoration: none;
+      transition: all 0.3s;
+      &:hover {
+        color: $color-red;
+      }
+    }
+  }
+}
+
+.movie-cast-and-crew {
+  position: relative;
+  width: 120rem;
+  margin: 4rem auto;
+  &__heading {
+    margin-bottom: 2rem;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__cast {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    &__card {
+      display: flex;
+      gap: 2rem;
+      text-decoration: none;
+      color: $color-white;
+      &:hover {
+        color: $color-white;
+      }
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+      justify-content: center;
+    }
+    &__name {
+      font-size: 1.8rem;
+    }
+    &__character {
+      font-size: 1.6rem;
+    }
+    &__img {
+      width: 92px;
+      height: 138px;
+    }
+  }
+  &__crew {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &__card {
+      text-decoration: none;
+      color: $color-white;
+      display: flex;
+      gap: 2rem;
+      &:hover {
+        color: $color-white;
+      }
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+      justify-content: center;
+    }
+    &__img {
+      width: 92px;
+      height: 138px;
+    }
+    &__name {
+      font-size: 1.8rem;
+    }
+    &__job,
+    &__known-for {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__btn {
+    margin-top: 2rem;
+    border: none;
+    outline: none;
+    width: 15rem;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: $color-white;
+    font-size: 1.6rem;
+    border: 1px solid $color-white;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      color: $color-red;
+      border: 1px solid $color-red;
+    }
+    &:active {
+      color: $color-red;
+      border: 1px solid $color-red;
+    }
+  }
+  &__btn2 {
+    display: none;
+    margin-top: 2rem;
+    border: none;
+    outline: none;
+    width: 15rem;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: $color-white;
+    font-size: 1.6rem;
+    border: 1px solid $color-white;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      color: $color-red;
+      border: 1px solid $color-red;
+    }
+    &:active {
+      color: $color-red;
+      border: 1px solid $color-red;
+    }
+  }
+}
+
+.imdb-logo {
+  width: 5rem;
+  height: 2rem;
+}

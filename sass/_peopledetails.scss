@@ -1,0 +1,107 @@
+.people-details {
+  width: 120rem;
+  position: relative;
+  margin: 2rem auto;
+  margin-bottom: 3rem;
+  display: flex;
+  gap: 3rem;
+  &__info {
+    height: 57rem;
+    overflow-y: auto;
+  }
+  &__img {
+    height: 57rem;
+    width: 36rem;
+    border-radius: 8px;
+  }
+  &__name {
+    font-size: 3.5rem;
+  }
+  &__biography {
+    font-size: 1.6rem;
+    &-heading {
+      color: $color-red;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+  }
+  &__place-of-birth {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  &__birthday {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  &__known-for-department {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+}
+
+.people-known-for {
+  position: relative;
+  width: 120rem;
+  margin: 3rem auto;
+  &__heading {
+    font-size: 2.5rem;
+  }
+  &__container {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+  }
+  &__card {
+    margin-top: 2rem;
+    text-decoration: none;
+    color: $color-white;
+  }
+  &__poster {
+    width: 15rem;
+    height: 22rem;
+  }
+  &__as-character {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    color: $color-white;
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
+
+.people-all-credits {
+  width: 120rem;
+  position: relative;
+  margin: 3rem auto;
+  &__heading {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  &__department {
+    display: flex;
+    flex-direction: column;
+    &__heading {
+      margin-bottom: 2rem;
+      font-size: 2.3rem;
+    }
+  }
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: $color-white;
+    border-top: 1px solid $color-white;
+    padding-top: 0.5rem;
+    transition: all 0.4s;
+    &:hover {
+      color: $color-red;
+    }
+    &:last-of-type {
+      border-bottom: 1px solid $color-white;
+      margin-bottom: 2rem;
+    }
+  }
+}

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/5991df7afe.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie/TV-Show Search App</title>
+  </head>
+  <body>
+    <div class="navigation__hidden-menu">
+      <div class="navigation__hidden-menu__movies">
+        <button class="navigation__hidden-menu__movies__heading-btn">
+          Movies
+        </button>
+        <ul class="navigation__hidden-menu__movies__drop__list">
+          <li class="navigation__hidden-menu__movies__drop__item">
+            <a
+              href="/pages/movies/popular/index.html"
+              class="navigation__hidden-menu__movies__drop__link"
+              >Popular</a
+            >
+          </li>
+          <li class="navigation__hidden-menu__movies__drop__item">
+            <a
+              href="/pages/movies/intheaters/index.html"
+              class="navigation__hidden-menu__movies__drop__link"
+              >In Theaters</a
+            >
+          </li>
+          <li class="navigation__hidden-menu__movies__drop__item">
+            <a
+              href="/pages/movies/upcoming/index.html"
+              class="navigation__hidden-menu__movies__drop__link"
+              >Upcoming Movies</a
+            >
+          </li>
+          <li class="navigation__hidden-menu__movies__drop__item">
+            <a
+              href="/pages/movies/toprated/index.html"
+              class="navigation__hidden-menu__movies__drop__link"
+              >Top Rated Movies</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navigation__hidden-menu__tvshows">
+        <button class="navigation__hidden-menu__tvshows__heading-btn">
+          TV-Shows
+        </button>
+        <ul class="navigation__hidden-menu__tvshows__drop__list">
+          <li class="navigation__hidden-menu__tvshows__drop__item">
+            <a
+              href="/pages/tvshows/popular/index.html"
+              class="navigation__hidden-menu__tvshows__drop__link"
+              >Popular</a
+            >
+          </li>
+          <li class="navigation__hidden-menu__tvshows__drop__item">
+            <a
+              href="/pages/tvshows/ontv/index.html"
+              class="navigation__hidden-menu__tvshows__drop__link"
+              >On TV Today</a
+            >
+          </li>
+          <li class="navigation__hidden-menu__tvshows__drop__item">
+            <a
+              href="/pages/tvshows/running/index.html"
+              class="navigation__hidden-menu__tvshows__drop__link"
+              >Currently Running</a
+            >
+          </li>
+          <li class="navigation__hidden-menu__tvshows__drop__item">
+            <a
+              href="/pages/tvshows/toprated/index.html"
+              class="navigation__hidden-menu__tvshows__drop__link"
+              >Top Rated TV-Shows</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navigation__hidden-menu__people">
+        <button class="navigation__hidden-menu__people__heading-btn">
+          People
+        </button>
+        <ul class="navigation__hidden-menu__people__drop__list">
+          <li class="navigation__hidden-menu__people__drop__item">
+            <a
+              href="/pages/people/popular/index.html"
+              class="navigation__hidden-menu__people__drop__link"
+              >Most Popular</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav class="navigation">
+      <div class="navigation__container">
+        <a href="/index.html" class="navigation__logo"
+          ><i class="fas fa-film"></i>
+          <h1 class="navigation__heading">MovieSearch</h1></a
+        >
+
+        <div class="navigation__dropdowns">
+          <div class="navigation__movies">
+            <h2 class="navigation__movies__heading">Movies</h2>
+            <div class="navigation__movies__drop">
+              <ul class="navigation__movies__drop__list">
+                <li class="navigation__movies__drop__item">
+                  <a
+                    href="/pages/movies/popular/index.html"
+                    class="navigation__movies__drop__link"
+                    >Popular</a
+                  >
+                </li>
+                <li class="navigation__movies__drop__item">
+                  <a
+                    href="/pages/movies/intheaters/index.html"
+                    class="navigation__movies__drop__link"
+                    >In Theaters</a
+                  >
+                </li>
+                <li class="navigation__movies__drop__item">
+                  <a
+                    href="/pages/movies/upcoming/index.html"
+                    class="navigation__movies__drop__link"
+                    >Upcoming Movies</a
+                  >
+                </li>
+                <li class="navigation__movies__drop__item">
+                  <a
+                    href="/pages/movies/toprated/index.html"
+                    class="navigation__movies__drop__link"
+                    >Top Rated Movies</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="navigation__tv-shows">
+            <h2 class="navigation__tv-shows__heading">TV-Shows</h2>
+            <div class="navigation__tv-shows__drop">
+              <ul class="navigation__tv-shows__drop__list">
+                <li class="navigation__tv-shows__drop__item">
+                  <a
+                    href="/pages/tvshows/popular/index.html"
+                    class="navigation__tv-shows__drop__link"
+                    >Popular</a
+                  >
+                </li>
+                <li class="navigation__tv-shows__drop__item">
+                  <a
+                    href="/pages/tvshows/ontv/index.html"
+                    class="navigation__tv-shows__drop__link"
+                    >On TV Today</a
+                  >
+                </li>
+                <li class="navigation__tv-shows__drop__item">
+                  <a
+                    href="/pages/tvshows/running/index.html"
+                    class="navigation__tv-shows__drop__link"
+                    >Currently Running</a
+                  >
+                </li>
+                <li class="navigation__tv-shows__drop__item">
+                  <a
+                    href="/pages/tvshows/toprated/index.html"
+                    class="navigation__tv-shows__drop__link"
+                    >Top Rated TV-Shows</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="navigation__people">
+            <h2 class="navigation__people__heading">People</h2>
+            <div class="navigation__people__drop">
+              <ul class="navigation__people__drop__list">
+                <li class="navigation__people__drop__item">
+                  <a
+                    href="/pages/people/popular/index.html"
+                    class="navigation__people__drop__link"
+                    >Most Popular</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="navigation__hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="navigation__searchbox">
+          <input
+            type="text"
+            class="navigation__input"
+            placeholder="Search for Movies, TV-Shows or Actors / Actresses..."
+          />
+          <div class="navigation__suggestions"></div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="tv-show-details">
+      <!-- <div class="blurry-bg"></div> -->
+      <div class="tv-show-details__container">
+        <img src="" class="tv-show-details__poster" />
+
+        <div class="tv-show-details__info">
+          <h2 class="tv-show-details__info__name"></h2>
+          <p class="tv-show-details__info__genres">
+            <span class="details-red-color">Genres: </span>
+          </p>
+          <p class="tv-show-details__info__runtime">
+            <span class="details-red-color">Runtime: </span>
+          </p>
+
+          <p class="tv-show-details__info__userscore">
+            <span class="details-red-color">Average rating: </span>
+          </p>
+
+          <p class="tv-show-details__info__tagline">
+            <span class="details-red-color">Tagline: </span>
+          </p>
+          <p class="tv-show-details__info__synopsis">
+            <span class="details-red-color">Synopsis: </span> <br />
+          </p>
+          <p class="tv-show-details__info__created-by">
+            Created by: <br />
+            <span class="tv-show-details__info__creators"> </span>
+          </p>
+          <button class="tv-show-details__info__play-trailer-btn">
+            Play Trailer
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="tv-cast-and-crew">
+      <h2 class="tv-cast-and-crew__heading">Cast and Crew</h2>
+      <div class="tv-cast-and-crew__container">
+        <div class="tv-cast-and-crew__cast">
+          <!-- <div class="tv-cast-and-crew__cast__card">
+            <img
+              src="https://image.tmdb.org/t/p/w92/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg"
+              class="tv-cast-and-crew__cast__img"
+            />
+            <div class="tv-cast-and-crew__cast__info">
+              <p class="tv-cast-and-crew__cast__name">Ime Glumca</p>
+              <p class="tv-cast-and-crew__cast__character">Ime Lika</p>
+              <p class="tv-cast-and-crew__cast__episodes">Broj epizoda: 50</p>
+            </div>
+          </div> -->
+        </div>
+        <div class="tv-cast-and-crew__crew">
+          <!-- <div class="tv-cast-and-crew__crew__card">
+            <img
+              src="https://image.tmdb.org/t/p/w92/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg"
+              class="tv-cast-and-crew__crew__img"
+            />
+            <div class="tv-cast-and-crew__crew__info">
+              <p class="tv-cast-and-crew__crew__name">Ime Osobe</p>
+              <p class="tv-cast-and-crew__crew__job">Posao</p>
+              <p class="tv-cast-and-crew__crew__episodes">Broj epizoda: 50</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <button class="tv-cast-and-crew__btn">Load All</button>
+      <button class="tv-cast-and-crew__btn2">Collapse</button>
+    </section>
+
+    <section class="tv-detailed-info-and-links">
+      <h2 class="tv-detailed-info-and-links__heading">Detailed info</h2>
+      <div class="tv-detailed-info-and-links__container">
+        <div class="tv-detailed-info-and-links__left">
+          <p class="tv-detailed-info-and-links__original-language">
+            <span class="details-red-color">Original Language: </span>
+          </p>
+          <p class="tv-detailed-info-and-links__country">
+            <span class="details-red-color">Origin Country: </span>
+          </p>
+          <p class="tv-detailed-info-and-links__status">
+            <span class="details-red-color">Status: </span>
+          </p>
+          <p class="tv-detailed-info-and-links__type">
+            <span class="details-red-color">Type: </span>
+          </p>
+          <p class="tv-detailed-info-and-links__networks">
+            <span class="details-red-color">Networks: </span>
+          </p>
+        </div>
+        <div class="tv-detailed-info-and-links__right">
+          <p class="tv-detailed-info-and-links__first-air">
+            <span class="details-red-color">First air date: </span>
+          </p>
+          <p class="tv-detailed-info-and-links__last-air">
+            <span class="details-red-color">Last air date: </span>
+          </p>
+          <p class="tv-detailed-info-and-links__number-of-seasons">
+            <span class="details-red-color">Number of seasons: </span>
+          </p>
+          <p class="tv-detailed-info-and-links__number-of-episodes">
+            <span class="details-red-color">Number of episodes: </span>
+          </p>
+          <p class="tv-detailed-info-and-links__homepage">
+            <span class="details-red-color">Homepage: </span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="current-last-season">
+      <div class="current-last-season__container">
+        <div class="current-last-season__info">
+          <h2 class="current-last-season__heading">Current / Latest Season</h2>
+          <div class="current-last-season__info__container">
+            <img src="" class="current-last-season__img" />
+            <div class="current-last-season__info__container__info">
+              <p class="current-last-season__name">
+                <span class="details-red-color">Name: </span>
+              </p>
+              <p class="current-last-season__air-date">
+                <span class="details-red-color">Air date: </span>
+              </p>
+              <button class="show-all-episodes-btn">Show all Episodes</button>
+              <button class="hide-episodes-btn">Hide Episodes</button>
+            </div>
+          </div>
+        </div>
+        <div class="current-last-season__last-episode-info">
+          <h2 class="current-last-season__heading">
+            Last Episode to Air in Season
+          </h2>
+          <p class="current-last-season__episode-name">
+            <span class="details-red-color">Name: </span>
+          </p>
+          <p class="current-last-season__episode-air-date">
+            <span class="details-red-color">Air date: </span>
+          </p>
+          <p class="current-last-season__episode-number">
+            <span class="details-red-color">Episode number: </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="current-last-season__episodes__container">
+        <h2 class="current-last-season__episodes__container__heading">
+          All Episodes in Latest Season
+        </h2>
+        <!-- <div class="current-last-season__episodes__card">
+          <img src="" class="current-last-season__episodes__card__img" />
+          <div class="current-last-season__episodes__card__info">
+            <p
+              class="current-last-season__episodes__card__info__episode-number"
+            >
+              <span class="details-red-color">Episode number: </span>
+            </p>
+            <p class="current-last-season__episodes__card__info__episode-name">
+              <span class="details-red-color">Name: </span>
+            </p>
+            <p
+              class="
+                current-last-season__episodes__card__info__episode-air-date
+              "
+            >
+              <span class="details-red-color">Air date: </span>
+            </p>
+            <p
+              class="current-last-season__episodes__card__info__episode-rating"
+            >
+              <span class="details-red-color">Average rating: </span>
+            </p>
+            <p
+              class="
+                current-last-season__episodes__card__info__episode-synopsis
+              "
+            >
+              <span class="details-red-color">Synopsis: </span>
+            </p>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <div class="modal-yt-video">
+      <div class="modal-yt-video__container">
+        <div class="modal-yt-video__name-and-exit">
+          <h1 class="modal-yt-video__heading"></h1>
+          <i class="fas fa-times close-modal"></i>
+        </div>
+        <iframe
+          id="ytplayer-modal"
+          type="text/html"
+          width="900"
+          height="700"
+          src=""
+          frameborder="0"
+          allow="fullscreen"
+        ></iframe>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p class="footer__text">Designed and Made by Dino Sijaric.</p>
+      <p class="footer__attr">
+        All data used on site owned by
+        <span
+          ><a href="https://www.themoviedb.org"
+            ><img
+              src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_1-5bdc75aaebeb75dc7ae79426ddd9be3b2be1e342510f8202baf6bffa71d7f5c4.svg"
+              class="tmdb-logo" /></a
+        ></span>
+      </p>
+    </footer>
+
+    <script src="/js/common.js"></script>
+    <script src="/js/asyncfunctions.js"></script>
+    <script src="/js/tvshowdetails.js" type="module"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

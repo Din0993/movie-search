@@ -1,0 +1,106 @@
+.popular-tv-shows {
+  position: relative;
+  margin: 2rem auto;
+  width: 120rem;
+  @media only screen and (max-width: 90rem) {
+    width: 90vw;
+  }
+  &__heading {
+    @media only screen and (max-width: 90rem) {
+      text-align: center;
+    }
+  }
+  &__container {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media only screen and (max-width: 90rem) {
+      width: 90vw;
+      justify-content: space-around;
+    }
+  }
+
+  &__card {
+    position: relative;
+    width: 22rem;
+    height: 33.5rem;
+    cursor: pointer;
+    overflow: hidden;
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+    &__name {
+      position: absolute;
+      line-height: 1;
+      bottom: -1rem;
+      width: 100%;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.438);
+      padding: 1rem 0;
+      opacity: 1;
+      transition: all 0.4s;
+    }
+
+    &__overview {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.87);
+      transition: all 0.4s ease-in-out;
+
+      &__heading {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 2.2rem;
+      }
+      &__info-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        padding: 0 1rem;
+      }
+      &__text {
+        font-size: 1.2rem;
+      }
+      &__btn {
+        position: absolute;
+        border: none;
+        outline: none;
+        width: 10rem;
+        padding: 0.5rem 1rem;
+        background-color: transparent;
+        color: $color-white;
+        font-size: 1.6rem;
+        border: 1px solid $color-white;
+        cursor: pointer;
+        top: 90%;
+        left: 50%;
+        text-decoration: none;
+        text-align: center;
+        transform: translate(-50%, -85%) translateY(0) scale(1);
+        transition: all 0.3s;
+        &:hover {
+          color: $color-red;
+          border: 1px solid $color-red;
+        }
+        &:active {
+          color: $color-red;
+          border: 2px solid $color-red;
+          transform: translate(-50%, -85%) translateY(3px) scale(0.95);
+        }
+      }
+    }
+  }
+}
+
+.popular-tv-shows__card:hover > .popular-tv-shows__card__overview {
+  top: 0;
+}
+
+.popular-tv-shows__card:hover > .popular-tv-shows__card__name {
+  opacity: 0;
+}
