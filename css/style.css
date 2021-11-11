@@ -545,6 +545,9 @@ body {
     position: relative;
     margin: 0 auto;
     margin-top: 3rem; }
+    @media only screen and (max-width: 90rem) {
+      .popular-movies__select-genre {
+        width: 90vw; } }
 
 .popular-movies__movie-container__card:hover
 > .popular-movies__movie-container__card__overview {
@@ -1378,6 +1381,9 @@ body {
     width: 50%;
     transform: translate(-50%, -50%);
     z-index: 7; }
+    @media only screen and (max-width: 90rem) {
+      .modal-yt-video__container {
+        width: 90vw; } }
   .modal-yt-video__name-and-exit {
     width: 100%;
     display: flex;

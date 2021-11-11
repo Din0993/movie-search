@@ -122,6 +122,9 @@
     width: 50%;
     transform: translate(-50%, -50%);
     z-index: 7;
+    @media only screen and (max-width: 90rem) {
+      width: 90vw;
+    }
   }
   &__name-and-exit {
     width: 100%;
