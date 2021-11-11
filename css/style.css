@@ -95,7 +95,7 @@ body {
     visibility: hidden;
     opacity: 0;
     height: 3rem; }
-    @media only screen and (max-width: 90rem) {
+    @media only screen and (max-width: 50rem) {
       .top-rated-movies-by-genres__dropdown {
         left: 0;
         padding: 0;
@@ -285,7 +285,7 @@ body {
     opacity: 0;
     height: 3rem;
     visibility: hidden; }
-    @media only screen and (max-width: 90rem) {
+    @media only screen and (max-width: 50rem) {
       .top-rated-tv-shows-by-genre__dropdown {
         left: 0;
         padding: 0;
@@ -461,6 +461,13 @@ body {
   width: 120rem;
   position: relative;
   margin: 3rem auto; }
+  @media only screen and (max-width: 90rem) {
+    .popular-movies {
+      width: 90vw; } }
+  @media only screen and (max-width: 90rem) {
+    .popular-movies {
+      position: relative;
+      margin: 0 auto; } }
   .popular-movies__movie-container {
     margin-top: 3rem;
     width: 100%;
@@ -468,6 +475,10 @@ body {
     gap: 2rem;
     flex-wrap: wrap;
     justify-content: space-between; }
+    @media only screen and (max-width: 90rem) {
+      .popular-movies__movie-container {
+        align-items: baseline;
+        justify-content: space-around; } }
     .popular-movies__movie-container__card {
       position: relative;
       width: 22rem;
@@ -572,6 +583,16 @@ body {
     margin: 0 auto;
     display: flex;
     gap: 2rem; }
+    @media only screen and (max-width: 90rem) {
+      .movie-details__container {
+        width: 90vw; } }
+    @media only screen and (max-width: 45rem) {
+      .movie-details__container {
+        width: 90vw;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center; } }
   .movie-details__poster {
     height: 57rem;
     width: 36rem;
@@ -618,14 +639,30 @@ body {
   width: 120rem;
   position: relative;
   margin: 3rem auto; }
+  @media only screen and (max-width: 90rem) {
+    .movie-detailed-info {
+      width: 90vw; } }
   .movie-detailed-info__container {
     margin-top: 2rem;
     display: flex;
     font-size: 1.6rem; }
+    @media only screen and (max-width: 50rem) {
+      .movie-detailed-info__container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center; } }
     .movie-detailed-info__container__left {
       flex: 0 0 50%; }
+      @media only screen and (max-width: 45rem) {
+        .movie-detailed-info__container__left {
+          flex: 0 0 100%;
+          width: 90vw; } }
     .movie-detailed-info__container__right {
       flex: 1; }
+      @media only screen and (max-width: 45rem) {
+        .movie-detailed-info__container__right {
+          width: 90vw; } }
   .movie-detailed-info__links__homepage {
     color: #fff;
     text-decoration: none;
@@ -637,16 +674,29 @@ body {
   position: relative;
   width: 120rem;
   margin: 4rem auto; }
+  @media only screen and (max-width: 90rem) {
+    .movie-cast-and-crew {
+      width: 90vw; } }
   .movie-cast-and-crew__heading {
     margin-bottom: 2rem; }
   .movie-cast-and-crew__container {
     display: flex;
     justify-content: space-around; }
+    @media only screen and (max-width: 45rem) {
+      .movie-cast-and-crew__container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center; } }
   .movie-cast-and-crew__cast {
     flex: 0 0 50%;
     display: flex;
     flex-direction: column;
     gap: 2rem; }
+    @media only screen and (max-width: 45rem) {
+      .movie-cast-and-crew__cast {
+        flex: 0 0 100%;
+        padding-bottom: 2rem; } }
     .movie-cast-and-crew__cast__card {
       display: flex;
       gap: 2rem;
@@ -671,6 +721,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem; }
+    @media only screen and (max-width: 45rem) {
+      .movie-cast-and-crew__crew {
+        width: 90vw;
+        padding-top: 2rem;
+        border-top: 1px solid #d72323; } }
     .movie-cast-and-crew__crew__card {
       text-decoration: none;
       color: #fff;
@@ -1115,6 +1170,16 @@ body {
   margin-bottom: 3rem;
   display: flex;
   gap: 3rem; }
+  @media only screen and (max-width: 90rem) {
+    .people-details {
+      width: 90vw; } }
+  @media only screen and (max-width: 45rem) {
+    .people-details {
+      width: 90vw;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; } }
   .people-details__info {
     height: 57rem;
     overflow-y: auto; }
@@ -1145,6 +1210,9 @@ body {
   position: relative;
   width: 120rem;
   margin: 3rem auto; }
+  @media only screen and (max-width: 90rem) {
+    .people-known-for {
+      width: 90vw; } }
   .people-known-for__heading {
     font-size: 2.5rem; }
   .people-known-for__container {
@@ -1169,6 +1237,9 @@ body {
   width: 120rem;
   position: relative;
   margin: 3rem auto; }
+  @media only screen and (max-width: 90rem) {
+    .people-all-credits {
+      width: 90vw; } }
   .people-all-credits__heading {
     font-size: 2.5rem;
     margin-bottom: 2rem; }
@@ -1192,6 +1263,9 @@ body {
     .people-all-credits__card:last-of-type {
       border-bottom: 1px solid #fff;
       margin-bottom: 2rem; }
+    @media only screen and (max-width: 90rem) {
+      .people-all-credits__card {
+        gap: 4rem; } }
 
 .fa-times {
   font-size: 3rem;
@@ -1448,6 +1522,16 @@ body {
     width: 120rem;
     margin: 0 auto;
     gap: 3rem; }
+    @media only screen and (max-width: 90rem) {
+      .tv-show-details__container {
+        width: 90vw; } }
+    @media only screen and (max-width: 45rem) {
+      .tv-show-details__container {
+        width: 90vw;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center; } }
   .tv-show-details__poster {
     border-radius: 8px;
     height: 45rem;
@@ -1494,16 +1578,29 @@ body {
   position: relative;
   width: 120rem;
   margin: 4rem auto; }
+  @media only screen and (max-width: 90rem) {
+    .tv-cast-and-crew {
+      width: 90vw; } }
   .tv-cast-and-crew__heading {
     margin-bottom: 2rem; }
   .tv-cast-and-crew__container {
     display: flex;
     justify-content: space-around; }
+    @media only screen and (max-width: 45rem) {
+      .tv-cast-and-crew__container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center; } }
   .tv-cast-and-crew__cast {
     flex: 0 0 50%;
     display: flex;
     flex-direction: column;
     gap: 2rem; }
+    @media only screen and (max-width: 45rem) {
+      .tv-cast-and-crew__cast {
+        flex: 0 0 100%;
+        padding-bottom: 2rem; } }
     .tv-cast-and-crew__cast__card {
       display: flex;
       gap: 2rem;
@@ -1528,6 +1625,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem; }
+    @media only screen and (max-width: 45rem) {
+      .tv-cast-and-crew__crew {
+        width: 90vw;
+        padding-top: 2rem;
+        border-top: 1px solid #d72323; } }
     .tv-cast-and-crew__crew__card {
       display: flex;
       gap: 2rem;
@@ -1589,17 +1691,33 @@ body {
   width: 120rem;
   position: relative;
   margin: 3rem auto; }
+  @media only screen and (max-width: 90rem) {
+    .tv-detailed-info-and-links {
+      width: 90vw; } }
   .tv-detailed-info-and-links__heading {
     font-size: 2rem; }
   .tv-detailed-info-and-links__container {
     display: flex;
     margin-top: 2rem; }
+    @media only screen and (max-width: 50rem) {
+      .tv-detailed-info-and-links__container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center; } }
   .tv-detailed-info-and-links__left {
     flex: 0 0 50%;
     font-size: 1.6rem; }
+    @media only screen and (max-width: 45rem) {
+      .tv-detailed-info-and-links__left {
+        flex: 0 0 100%;
+        width: 90vw; } }
   .tv-detailed-info-and-links__right {
     flex: 1;
     font-size: 1.6rem; }
+    @media only screen and (max-width: 45rem) {
+      .tv-detailed-info-and-links__right {
+        width: 90vw; } }
   .tv-detailed-info-and-links__links {
     display: flex;
     gap: 1rem; }
@@ -1620,17 +1738,36 @@ body {
   width: 120rem;
   position: relative;
   margin: 3rem auto; }
+  @media only screen and (max-width: 90rem) {
+    .current-last-season {
+      width: 90vw; } }
   .current-last-season__container {
     display: flex; }
+    @media only screen and (max-width: 50rem) {
+      .current-last-season__container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center; } }
   .current-last-season__info {
     flex: 0 0 50%;
     font-size: 1.6rem; }
+    @media only screen and (max-width: 50rem) {
+      .current-last-season__info {
+        order: 2; } }
+    @media only screen and (max-width: 45rem) {
+      .current-last-season__info {
+        flex: 0 0 100%;
+        width: 90vw; } }
     .current-last-season__info__container {
       display: flex;
       gap: 2rem; }
   .current-last-season__last-episode-info {
     flex: 1;
     font-size: 1.6rem; }
+    @media only screen and (max-width: 45rem) {
+      .current-last-season__last-episode-info {
+        width: 90vw; } }
   .current-last-season__heading {
     margin-bottom: 2rem; }
   .current-last-season__img {
@@ -1687,6 +1824,14 @@ body {
   display: flex;
   gap: 2rem;
   font-size: 1.6rem; }
+  @media only screen and (max-width: 50rem) {
+    .current-last-season__episodes__card {
+      border-top: 1px solid #d72323;
+      padding-top: 2rem;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: center; } }
   .current-last-season__episodes__card__img {
     width: 292px;
     height: 208px; }

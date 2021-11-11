@@ -48,7 +48,7 @@
     visibility: hidden;
     opacity: 0;
     height: 3rem;
-    @media only screen and (max-width: 90rem) {
+    @media only screen and (max-width: 50rem) {
       left: 0;
       padding: 0;
       width: 90vw;
@@ -272,7 +272,7 @@
     opacity: 0;
     height: 3rem;
     visibility: hidden;
-    @media only screen and (max-width: 90rem) {
+    @media only screen and (max-width: 50rem) {
       left: 0;
       padding: 0;
       width: 90vw;
@@ -481,6 +481,14 @@
   width: 120rem;
   position: relative;
   margin: 3rem auto;
+  @media only screen and (max-width: 90rem) {
+    width: 90vw;
+  }
+  @media only screen and (max-width: 90rem) {
+    position: relative;
+    margin: 0 auto;
+  }
+
   &__movie-container {
     margin-top: 3rem;
     width: 100%;
@@ -489,6 +497,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     // visibility: hidden;
+    @media only screen and (max-width: 90rem) {
+      align-items: baseline;
+      justify-content: space-around;
+    }
 
     &__card {
       position: relative;
